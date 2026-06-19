@@ -255,14 +255,9 @@ class HomeScreen(Screen):
         self.user = None
         self.manager.current = "login"
 
-
 class TapRewardApp(App):
     def build(self):
-        sm = ScreenManager()
-        sm.add_widget(LoginScreen(name="login"))
-        sm.add_widget(HomeScreen(name="home"))
-        return sm
+        return Label(text='App Working!')
 
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     TapRewardApp().run()
