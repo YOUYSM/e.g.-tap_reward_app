@@ -5,7 +5,7 @@ package.domain = org.you
 source.dir =.
 source.include_exts = py,png,jpg,kv,atlas,json
 version = 1.0
-requirements = requirements = python3,kivy,flask,requests
+requirements = python3,kivy,flask,requests
 orientation = portrait
 fullscreen = 0
 android.api = 33
