@@ -8,9 +8,8 @@ version = 1.0
 requirements = python3,kivy,flask,requests
 orientation = portrait
 fullscreen = 0
-android.api = 33
+android.api = 34
 android.minapi = 21
-android.sdk_path =
 android.arch = arm64-v8a
 android.permissions = INTERNET,WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE
 
