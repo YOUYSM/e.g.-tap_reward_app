@@ -1,17 +1,19 @@
+
+
 [app]
 title = Tap Reward
 package.name = tapreward
-package.domain = org.you
-source.dir = .
+package.domain = com.youysm
+source.dir =./
 source.include_exts = py,png,jpg,kv,atlas,json
 version = 1.0
-requirements = python3,kivy,flask,requests
+requirements = kivy,flask,requests
 orientation = portrait
 fullscreen = 0
 android.api = 34
 android.minapi = 21
 android.arch = arm64-v8a
-android.permissions = INTERNET,WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE
+android.permissions = INTERNET, WRITE_EXTERNAL_STORAGE, READ_EXTERNAL_STORAGE
 
 [buildozer]
 log_level = 2
