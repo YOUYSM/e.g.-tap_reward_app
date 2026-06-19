@@ -1,0 +1,19 @@
+[app]
+title = Tap Reward
+package.name = tapreward
+package.domain = org.you
+source.dir =.
+source.include_exts = py,png,jpg,kv,atlas,json
+version = 1.0
+requirements = python3,kivy,sqlite3,flask,requests
+orientation = portrait
+fullscreen = 0
+android.api = 33
+android.minapi = 21
+android.sdk_path =
+android.arch = arm64-v8a
+android.permissions = INTERNET,WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE
+
+[buildozer]
+log_level = 2
+warn_on_root = 1
