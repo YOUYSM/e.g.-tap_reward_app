@@ -2,7 +2,7 @@
 title = Tap Reward
 package.name = tapreward
 package.domain = org.you
-source.dir =.
+source.dir = .
 source.include_exts = py,png,jpg,kv,atlas,json
 version = 1.0
 requirements = python3,kivy,flask,requests
