@@ -1,6 +1,6 @@
 
 [app]
-title = Tap Reward
+title = TapReward
 package.name = tapreward
 package.domain = com.youysm
 source.dir=./
