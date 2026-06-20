@@ -1,3 +1,4 @@
+
 name: Build APK
 on: 
   push:
@@ -8,10 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-    
-    - name: Build with Buildozer
-      uses: ArtemSBulgakov/buildozer-action@v1
+    - uses: actions/checkout@v4
+    - uses: ArtemSBulgakov/buildozer-action@v1
       with:
         buildozer_version: master
