@@ -1,16 +1,35 @@
-
 name: Build APK
-on: 
+
+on:
   push:
     branches: [ main ]
   workflow_dispatch:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v4
-    - uses: ArtemSBulgakov/buildozer-action@v1
-      with:
-        buildozer_version: master
-        command: buildozer android debug
+      - name: Code checkout karo
+        uses: actions/checkout@v4
+
+      - name: Python setup karo
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Buildozer aur dependencies install karo
+        run: |
+          sudo apt update
+          sudo apt install -y git zip unzip openjdk-17-jdk python3-pip autoconf libtool pkg-config zlib1g-dev libncurses5-dev cmake libffi-dev libssl-dev
+          pip install --upgrade buildozer cython
+
+      - name: APK build karo
+        run: |
+          buildozer android debug
+
+      - name: APK ko upload karo (download ke liye)
+        uses: actions/upload-artifact@v4
+        with:
+          name: tap-reward-apk
+          path: bin/*.apk
