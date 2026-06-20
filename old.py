@@ -1,3 +1,0 @@
-kivy
-flask
-requests
